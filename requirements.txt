@@ -1,0 +1,13 @@
+requests
+pandas
+numpy
+scikit-learn
+xgboost
+mlflow
+fastapi
+uvicorn
+sqlalchemy
+python-dotenv
+pytest
+httpx
+joblib
