@@ -47,7 +47,7 @@ def model_info():
 @app.post("/predict", response_model=PredictionOutput)
 def make_prediction(data: WeatherInput):
     try:
-        result = predict(data.dict())
+        result = predict(data.model_dump())
         return PredictionOutput(
             predicted_temperature=result,
             unit="°C",
